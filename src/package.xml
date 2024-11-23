@@ -29,5 +29,23 @@
         <members>Training_Session__c</members>
         <name>CustomTab</name>
     </types>
+    <types>
+        <members>Attendee__c-Attendee Layout</members>
+        <members>Feedback__c-Feedback Layout</members>
+        <members>Training_Session__c-Training Session Layout</members>
+        <members>Training_Session__c-Webinar Page Layout</members>
+        <members>Training_Session__c-Workshop Page Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Training_Session__c.Webinar</members>
+        <members>Training_Session__c.Workshop</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>Attendee__c.Email_Format</members>
+        <members>Training_Session__c.Future_Session_Date</members>
+        <name>ValidationRule</name>
+    </types>
     <version>60.0</version>
 </Package>

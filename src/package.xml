@@ -1,51 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Attendee__c.Date_Issued__c</members>
-        <members>Attendee__c.Email__c</members>
-        <members>Attendee__c.Id__c</members>
-        <members>Attendee__c.Phone__c</members>
-        <members>Feedback__c.Comments__c</members>
-        <members>Feedback__c.Rating__c</members>
-        <members>Feedback__c.Session__c</members>
-        <members>Feedback__c.Training_Session_Feedback__c</members>
-        <members>Training_Session__c.Authorization_Proof__c</members>
-        <members>Training_Session__c.Avg_Rating__c</members>
-        <members>Training_Session__c.Count_Attendee__c</members>
-        <members>Training_Session__c.Location__c</members>
-        <members>Training_Session__c.Rating_Sum__c</members>
-        <members>Training_Session__c.Session_Date__c</members>
-        <name>CustomField</name>
-    </types>
-    <types>
-        <members>Attendee__c</members>
-        <members>Feedback__c</members>
-        <members>Training_Session__c</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>Attendee__c</members>
-        <members>Feedback__c</members>
-        <members>Training_Session__c</members>
-        <name>CustomTab</name>
-    </types>
-    <types>
-        <members>Attendee__c-Attendee Layout</members>
-        <members>Feedback__c-Feedback Layout</members>
-        <members>Training_Session__c-Training Session Layout</members>
-        <members>Training_Session__c-Webinar Page Layout</members>
-        <members>Training_Session__c-Workshop Page Layout</members>
+        <members>Contact-Customer Layout</members>
+        <members>Contact-Service Provider Layout</members>
         <name>Layout</name>
     </types>
     <types>
-        <members>Training_Session__c.Webinar</members>
-        <members>Training_Session__c.Workshop</members>
-        <name>RecordType</name>
+        <members>Service Account Team</members>
+        <members>Technology Team</members>
+        <name>Profile</name>
     </types>
     <types>
-        <members>Attendee__c.Email_Format</members>
-        <members>Training_Session__c.Future_Session_Date</members>
-        <name>ValidationRule</name>
+        <members>Contact.Customer_Record_Type</members>
+        <members>Contact.Service_Provider</members>
+        <name>RecordType</name>
     </types>
     <version>60.0</version>
 </Package>

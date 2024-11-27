@@ -5,6 +5,10 @@
         <name>FlexiPage</name>
     </types>
     <types>
+        <members>ApexAssignment1</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
         <members>Opportunity-Opportunity Layout</members>
         <name>Layout</name>
     </types>

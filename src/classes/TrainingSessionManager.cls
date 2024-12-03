@@ -7,7 +7,7 @@ public class TrainingSessionManager {
     }
     
     List<Training_Session__c> sessionList = new List<Training_Session__c>();
-	Set<Attendee__c> AttendeeSet = new Set<Attendee__c>();
+	Set<Attendee__c> attendeeSet = new Set<Attendee__c>();
     public void createRecord(List<Training_Session__c> multipleObj){ 
         //Integer a = 20/0;    // to understand Exception (break the code)
         try{
@@ -64,15 +64,15 @@ public class TrainingSessionManager {
         
         
         if(sessionType == TrainingSessionManager.TrainingSessionType.WEBINAR){
-        	AttendeeSet.add(addAttendee);
+        	attendeeSet.add(addAttendee);
         	System.debug(System.Label.Webinar_Greetings);
         }
         else if(sessionType == TrainingSessionManager.TrainingSessionType.WORKSHOP){
-        	AttendeeSet.add(addAttendee);
+        	attendeeSet.add(addAttendee);
         	System.debug(System.Label.Workshop_Greetings);
         }
         else if(sessionType == TrainingSessionManager.TrainingSessionType.SEMINAR){
-        	AttendeeSet.add(addAttendee);
+        	attendeeSet.add(addAttendee);
         	System.debug(System.Label.Seminar_Greetings);
         }
         else{
@@ -81,7 +81,7 @@ public class TrainingSessionManager {
     }
     
      public Set<Attendee__c> readRecordAttendee(){
-        return AttendeeSet;
+        return attendeeSet;
      }
     
     //Data Safety - Safe Navigation Task-1 

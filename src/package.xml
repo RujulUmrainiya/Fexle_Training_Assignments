@@ -6,7 +6,14 @@
     </types>
     <types>
         <members>ApexAssignment1</members>
+        <members>TrainingSessionManager</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Seminar_Greetings</members>
+        <members>Webinar_Greetings</members>
+        <members>Workshop_Greetings</members>
+        <name>CustomLabel</name>
     </types>
     <types>
         <members>Opportunity-Opportunity Layout</members>
@@ -18,3 +25,4 @@
     </types>
     <version>60.0</version>
 </Package>
+

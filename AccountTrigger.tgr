@@ -1,0 +1,26 @@
+trigger AccountTrigger on Account (before insert, before update, after delete) {
+
+    if(Trigger.isBefore){
+        
+        if(Trigger.isInsert){
+            
+            AccountTriggerHandler.countActivities(Trigger.New , Trigger.OldMap);
+            
+        }
+        
+        if(Trigger.isUpdate){
+            
+            AccountTriggerHandler.countActivities(Trigger.New , Trigger.OldMap); 
+            
+        }
+    }
+    
+    if(Trigger.isAfter){
+        
+         if(Trigger.isDelete){
+            
+            AccountTriggerHandler.countActivities(Trigger.Old , Trigger.OldMap);
+            
+        }
+    }
+}

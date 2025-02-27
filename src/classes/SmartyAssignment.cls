@@ -30,14 +30,15 @@ public class SmartyAssignment {
                     String responseBody = response.getBody();
                     boolean status = responseBody.contains(con.MailingPostalCode);
                     if(status){
-                        con.Is_Verified__c = 'True';
+                        con.Is_Verified__c = true;
                         System.debug('Verification = True');
                     }
                     else{
-                        con.Is_Verified__c = 'False';
+                        con.Is_Verified__c = false;
                         System.debug('Verification = False');
                     }
                     updatedContactList.add(con);
+                    update updatedContactList;
                     
                 } else {
                     System.debug('Error: ' + response.getStatusCode() + ' - ' + response.getBody());
@@ -46,7 +47,6 @@ public class SmartyAssignment {
                 System.debug('Exception: ' + e.getMessage());
             }
         }
-        update updatedContactList;
     }
 }
 

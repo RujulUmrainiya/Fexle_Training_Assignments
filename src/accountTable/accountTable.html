@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Account Datatable">
+        <div style="height: 200px;">
+            <lightning-datatable key-field="Id" data={accounts} columns={columns}></lightning-datatable>
+        </div>
+        <lightning-button variant="brand" label="New Account" onclick={handleNewAccountClick}> </lightning-button>
+    </lightning-card>
+
+
+    <template if:true={isAccountModelOpen}>
+        <c-account-model></c-account-model>
+    </template>
+
+
+    <template if:true={isContactModelOpen}>
+        <c-contact-model></c-contact-model>
+    </template>
+</template>

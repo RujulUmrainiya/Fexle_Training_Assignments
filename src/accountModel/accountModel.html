@@ -1,0 +1,7 @@
+<template>
+    <lightning-modal header="New Account">
+        <lightning-input label="Account Name" value={accountName} onchange={handleChanges}></lightning-input>
+        <lightning-input label="Industry" value={industry} onchange={handleChanges}></lightning-input>
+        <lightning-button label="Save" variant="brand" onclick={handleSave}></lightning-button>
+    </lightning-modal>
+</template>
